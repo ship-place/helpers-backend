@@ -37,7 +37,6 @@
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",
-    "@ship-place/helpers-backend": "/home/lexx/workspace/development/ship_place/tmp/helpers-backend",
     "dotenv": "^16.0.3"
   },
   "peerDependencies": {
