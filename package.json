@@ -1,0 +1,46 @@
+{
+  "name": "@ship-place/helpers-backend",
+  "version": "0.0.1",
+  "description": "Helpers-backend for Ship.Place",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "exit 0",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint . --ext .ts",
+    "prepare": "exit 0",
+    "prepublishOnly": "yarn test && yarn lint",
+    "preversion": "yarn lint",
+    "version": "yarn format && yarn tsc && git add -A",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ship-place/helpers-backend.git"
+  },
+  "author": "LexxXell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ship-place/helpers-backend/issues"
+  },
+  "homepage": "https://github.com/ship-place/helpers-backend#readme",
+  "devDependencies": {
+    "@ship-place/types": "ship-place/types",
+    "@types/node": "^18.15.3",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-no-loops": "^0.3.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@nestjs/common": "^8.0.0",
+    "@ship-place/helpers-backend": "/home/lexx/workspace/development/ship_place/tmp/helpers-backend",
+    "dotenv": "^16.0.3"
+  },
+  "peerDependencies": {
+    "@nestjs/common": ">=8.0.0"
+  }
+}
